@@ -1,0 +1,25 @@
+{
+  "data": {
+    "reportData": {
+      "report": {
+        "events": {
+          "data": [
+            {
+              "timestamp": 1500,
+              "sourceID": 10,
+              "targetID": 99,
+              "abilityGameID": 12294
+            },
+            {
+              "timestamp": 4200,
+              "sourceID": 10,
+              "targetID": 99,
+              "abilityGameID": 227847
+            }
+          ],
+          "nextPageTimestamp": 5000
+        }
+      }
+    }
+  }
+}

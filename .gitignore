@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.whl
+build/
+dist/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtualenvs ---
+.venv/
+venv/
+
+# --- Secrets & local config ---
+.env
+
+# --- Tool caches ---
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+.pyre/
+.pytype/
+
+# --- Coverage ---
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+htmlcov/
+
+# --- Project-specific runtime artifacts ---
+.cache/
+runs/
+report.md
+
+# --- Editor / IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+
+# --- Claude Code (keep CLAUDE.md tracked, ignore local settings) ---
+.claude/settings.local.json
