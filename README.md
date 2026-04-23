@@ -1,6 +1,6 @@
 This project serves as a passion project and Claude Code capabilities exploration.
 
-# WoWLogsAgent
+# RaidMind: WoWLogsAgent
 
 LLM-powered analyzer that compares two WarcraftLogs combat reports and produces a
 prioritized, human-readable list of changes a player can make to improve their DPS.
