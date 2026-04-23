@@ -15,6 +15,9 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -e '.[dev]'
+      - run: ruff --version
+      - run: ruff check src tests --diff
+        continue-on-error: true
       - run: ruff check src tests
       - run: mypy src
       - run: pytest -q
