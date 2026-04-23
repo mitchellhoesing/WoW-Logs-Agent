@@ -1,0 +1,23 @@
+{
+  "name": "wowlogsagent",
+  "version": "1.0.0",
+  "description": "LLM-powered analyzer that compares two WarcraftLogs combat reports and produces a prioritized, human-readable list of changes a player can make to improve their DPS.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchellhoesing/WoW-Logs-Agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchellhoesing/WoW-Logs-Agent/issues"
+  },
+  "homepage": "https://github.com/mitchellhoesing/WoW-Logs-Agent#readme"
+}

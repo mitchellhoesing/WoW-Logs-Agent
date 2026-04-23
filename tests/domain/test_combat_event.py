@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from dataclasses import FrozenInstanceError
+
 import pytest
 
 from wowlogs_agent.domain.entities import CombatEvent
@@ -36,5 +38,5 @@ class TestCombatEvent:
 
     def test_is_frozen(self) -> None:
         e = CombatEvent(timestamp_ms=0, ability_id=1, source_id=1)
-        with pytest.raises(Exception):
+        with pytest.raises(FrozenInstanceError):
             e.timestamp_ms = 5  # type: ignore[misc]

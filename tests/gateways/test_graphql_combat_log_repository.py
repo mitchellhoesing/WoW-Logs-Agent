@@ -5,13 +5,6 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, cast
 
-_FIXTURES = Path(__file__).parent / "fixtures"
-
-
-def _load_fixture(name: str) -> Mapping[str, Any]:
-    with (_FIXTURES / name).open(encoding="utf-8") as fp:
-        return cast(Mapping[str, Any], json.load(fp))
-
 from wowlogs_agent.gateways.warcraft_logs.graphql_client import WarcraftLogsGraphQLClient
 from wowlogs_agent.gateways.warcraft_logs.graphql_combat_log_repository import (
     GraphQLCombatLogRepository,
@@ -26,6 +19,13 @@ from wowlogs_agent.gateways.warcraft_logs.queries import (
     FIGHT_PLAYER_DETAILS_QUERY,
     REPORT_SUMMARY_QUERY,
 )
+
+_FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def _load_fixture(name: str) -> Mapping[str, Any]:
+    with (_FIXTURES / name).open(encoding="utf-8") as fp:
+        return cast(Mapping[str, Any], json.load(fp))
 
 
 class FakeGraphQLClient:
@@ -657,7 +657,7 @@ class TestTimelineAssembly:
             "damage_summary": _damage_summary(),
             "actor_damage": _default_actor_damage(),
             "actor_casts": _actor_casts({227847: 5, 12294: 30}),
-            # Two buff activations: 10s–20s and 100s–112s on the 300s fight.
+            # Two buff activations: 10s-20s and 100s-112s on the 300s fight.
             "buffs": _buffs(
                 bladestorm_uptime_ms=22_000,
                 bands=[(10_000, 20_000), (100_000, 112_000)],

@@ -14,7 +14,7 @@ from wowlogs_agent.domain.entities import (
     Fight,
 )
 from wowlogs_agent.domain.ports.combat_log_repository import CombatLogRepository
-from wowlogs_agent.domain.value_objects import DPS, BuffWindow, DpsBucket, TimeWindow, Timeline
+from wowlogs_agent.domain.value_objects import DPS, BuffWindow, DpsBucket, Timeline, TimeWindow
 from wowlogs_agent.gateways.warcraft_logs.graphql_client import WarcraftLogsGraphQLClient
 from wowlogs_agent.gateways.warcraft_logs.queries import (
     FIGHT_ACTOR_CASTS_QUERY,

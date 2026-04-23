@@ -6,7 +6,7 @@ from types import MappingProxyType
 
 from wowlogs_agent.domain.entities.ability_usage import AbilityUsage
 from wowlogs_agent.domain.entities.actor import Actor
-from wowlogs_agent.domain.value_objects import DPS, TimeWindow, Timeline, Uptime
+from wowlogs_agent.domain.value_objects import DPS, Timeline, TimeWindow, Uptime
 
 
 @dataclass(frozen=True)

@@ -152,7 +152,7 @@ query FightBuffs(
 
 # Cast events only — the rest of the timeline is derived from the existing Buffs
 # table (aura bands) and the pre-aggregated damage graph. Filtering to `Casts`
-# keeps one player's response to ~100–300 rows, virtually always a single page.
+# keeps one player's response to ~100-300 rows, virtually always a single page.
 # The pagination loop in the repository advances `$start` to the previous page's
 # `nextPageTimestamp` each iteration; WCL's `events` field has no separate
 # cursor variable — `startTime` doubles as the cursor.

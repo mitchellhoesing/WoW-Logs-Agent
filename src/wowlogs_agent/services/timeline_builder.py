@@ -28,7 +28,7 @@ class TimelineBuilder:
     ) -> Timeline:
         casts = tuple(
             sorted(
-                (
+                
                     CooldownCast(
                         timestamp_ms=event.timestamp_ms,
                         ability_id=event.ability_id,
@@ -37,7 +37,7 @@ class TimelineBuilder:
                         ),
                     )
                     for event in cast_events
-                )
+                
             )
         )
         windows = tuple(sorted(buff_windows))
