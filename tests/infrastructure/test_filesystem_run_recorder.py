@@ -5,7 +5,9 @@ from pathlib import Path
 
 from wowlogs_agent.domain.ports.llm_client import LLMMessage, LLMResponse
 from wowlogs_agent.domain.ports.run_recorder import RunRecord
-from wowlogs_agent.infrastructure.runs.filesystem_run_recorder import FilesystemRunRecorder
+from wowlogs_agent.infrastructure.runs.filesystem_run_recorder import (
+    FilesystemRunRecorder,
+)
 
 
 def _record() -> RunRecord:
