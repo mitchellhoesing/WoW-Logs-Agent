@@ -34,9 +34,10 @@ coverage.xml
 htmlcov/
 
 # --- Project-specific runtime artifacts ---
-.cache/
-runs/
-report.md
+/.cache/
+/runs/
+/report.md
+/TODO.md
 
 # --- Editor / IDE ---
 .idea/
