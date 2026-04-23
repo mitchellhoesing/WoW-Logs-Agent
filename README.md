@@ -1,3 +1,5 @@
+This project serves as a passion project and Claude Code capabilities exploration.
+
 # WoWLogsAgent
 
 LLM-powered analyzer that compares two WarcraftLogs combat reports and produces a
